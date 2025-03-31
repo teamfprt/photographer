@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Big Shoulders Stencil", sans-serif; 
+    background-color: #010101;
+}
+.top-btn
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: 0.4s ease-in-out;
+}
+.top-btn:hover
+{
+    transform: scale(1.2);
+}
+.smoke{
+    background-image: url(photos/white-smoke-fog-isolated-black-background_39386-738.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* start nav*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav,ul{
+    display: flex;    
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 7px;
+    transition: 0.7s ease;
+    font-size: 25px;
+}
+ul,li,a:hover{
+    color: darkcyan;
+}
+.logo
+{
+    color: whitesmoke;
+}
+.h2
+{
+    text-align: center;
+}
+/* end */
+/* start home*/
+#home{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 630px;
+    position: relative;
+    
+}
+.text{
+    color: whitesmoke;
+}
+.text h1{
+    font-size: 50px;
+}
+.arrow a img{
+    padding-top: 20px;
+    transition: 0.7s ease;
+}
+.arrow a img:hover{
+    transform: scale(1.1);
+}
+.photo-intro{
+    font-size: 20px;
+}
+#photo-gallery{
+    height: 680px;
+}
+#photo-gallery {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    padding: 10px;
+}
+.gallery-container {
+    display: flex;
+    transition: transform 0.9s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.image-box {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.image-box img {
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+    filter: brightness(100%) contrast(120%) saturate(120%);
+    transition: transform 0.4s ease-in-out, opacity 0.3s;
+}
+.image-box:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.image-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    border-radius: 30px;
+}
+button {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    border-radius: 50%;
+    transition: background 0.4s, transform 0.3s;
+    backdrop-filter: blur(15px);
+}
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+#prev { left: 50px; }
+#next { right: 50px; }
+.photo-intro{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+#video .content{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 40px;
+    justify-content: center
+}
+#video .content .card{
+    text-align: center;
+    border: 2px solid #1C3D5a;
+    overflow: hidden;
+}
+#video .content .card h3{
+    padding: 10px
+}
+#video .content .card a{
+    margin: 5px 0px 10px 0px;
+
+}
+#video .img-pro{
+    overflow: hidden;
+}
+#video h3
+{
+    color: aliceblue;
+}
+#video img{
+    width: 330px;
+    height: 180px;
+    transition: .5s ease;
+}
+#video img:hover{
+    transform: scale(1.2) rotate(3deg);
+}
+.video{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+#contact{
+    padding-top:50px ;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+#contact p {
+    width:300px;
+}
+#contact .read{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #1C3D5a;
+    border: 1px #1C3D5a solid ;
+    border-radius: 45px;
+}
+#contact .read:hover{
+    background-color: #1c3d5a00;
+}
+.so a{
+    display: inline-block;
+    padding-top: 20px;
+    transition: 0.5s ease-in-out;
+}
+.so a:hover{
+    transform: scale(1.1);
+}
+footer
+{
+    background-image: url(https://media.istockphoto.com/id/2170486837/vector/smoke-clouds-above-black-water-surface.jpg?s=612x612&w=0&k=20&c=jXT7hf_ejrC0XcVKaIA-PqIA8DosRWN4bRIDmPAT4IU=);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.au-con{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.au-con a 
+{
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    border-radius: 45px;
+    transition: 0.7s ease;
+}
+.au-con a:hover{
+    transform: scale(1.1);
+    color:darkcyan;
+}
+.au-con div
+{
+    padding-top: 10px ;
+    padding-bottom: 20px ;
+}
